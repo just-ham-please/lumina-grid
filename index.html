@@ -3,34 +3,64 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Lumina Grid</title>
+  <title>Lumina Grid – KI-Plattform</title>
+  <meta name="description" content="Lumina Grid – kompakte Projektseite für ein KI-Produkt.">
+  <meta property="og:title" content="Lumina Grid">
+  <meta property="og:description" content="Schnell. Leicht. Zukunftssicher.">
+  <meta property="og:type" content="website">
   <link rel="stylesheet" href="assets/styles.css">
+  <script defer src="assets/script.js"></script>
 </head>
 <body>
   <header class="header">
     <nav class="nav">
-      <strong>Lumina Grid</strong>
-      <a href="/lumina-grid/" class="active">Home</a>
-      <a href="/lumina-grid/about.html">Über</a>
-      <a href="/lumina-grid/videos/demo-video.html">Videos</a>
+      <div class="brand">
+        <span>🔷 Lumina Grid</span>
+        <span class="badge">Preview</span>
+      </div>
+      <div class="navlinks">
+        <a href="/lumina-grid/">Home</a>
+        <a href="/lumina-grid/about.html">Über</a>
+        <a href="/lumina-grid/videos/demo-video.html">Videos</a>
+      </div>
     </nav>
   </header>
 
   <main class="main">
-    <h1>Willkommen bei Lumina Grid</h1>
-    <p>Die Seite läuft 🎉 – jetzt mit Basislayout.</p>
+    <section class="hero">
+      <h1>KI-Wissen. Struktur. Geschwindigkeit.</h1>
+      <p>Lumina Grid hilft Teams, internes Wissen zu ordnen und schneller nutzbar zu machen – mit klaren Schnittstellen, sauberer Sicherheit und minimalem Overhead.</p>
+      <div class="cta">
+        <a class="btn btn-primary" href="/lumina-grid/videos/demo-video.html">🎬 Kurz-Demo ansehen</a>
+        <a class="btn" href="/lumina-grid/about.html">Mehr erfahren</a>
+      </div>
+    </section>
 
-    <div class="card">
-      <h2>Schnellstart</h2>
-      <ul>
-        <li>Weitere Seiten anlegen (z. B. <code>about.html</code>)</li>
-        <li>YouTube-Embeds unter <code>/videos/</code></li>
-      </ul>
-    </div>
+    <section class="section">
+      <div class="grid">
+        <div class="card">
+          <h3>⚡ Leichtgewichtig</h3>
+          <p>Statische Auslieferung, schnelle Ladezeiten. Ideal für Teaser, MVP und Demos.</p>
+        </div>
+        <div class="card">
+          <h3>🔒 Saubere Basis</h3>
+          <p>Keine Cookies, kein Tracking by default. YouTube per nocookie-Domain einbettbar.</p>
+        </div>
+        <div class="card">
+          <h3>🧩 Erweiterbar</h3>
+          <p>Ohne Build-Tools startklar. Später nahtlos auf Astro/Next migrierbar.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section card">
+      <h3>So startest du</h3>
+      <p><span class="kbd">index.html</span> bearbeiten, Inhalte ergänzen, pushen – GitHub Pages deployed automatisch.</p>
+    </section>
   </main>
 
   <footer class="footer">
-    © <span id="y"></span> Lumina Grid · <a href="/lumina-grid/about.html">Kontakt/Impressum</a>
+    © <span id="y"></span> Lumina Grid · <a href="/lumina-grid/about.html">Impressum/Kontakt</a>
     <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
   </footer>
 </body>

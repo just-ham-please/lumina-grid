@@ -5,28 +5,47 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Über – Lumina Grid</title>
   <link rel="stylesheet" href="assets/styles.css">
+  <script defer src="assets/script.js"></script>
 </head>
 <body>
   <header class="header">
     <nav class="nav">
-      <strong>Lumina Grid</strong>
-      <a href="/lumina-grid/">Home</a>
-      <a href="/lumina-grid/about.html" class="active">Über</a>
-      <a href="/lumina-grid/videos/demo-video.html">Videos</a>
+      <div class="brand">
+        <span>🔷 Lumina Grid</span>
+        <span class="badge">Preview</span>
+      </div>
+      <div class="navlinks">
+        <a href="/lumina-grid/">Home</a>
+        <a href="/lumina-grid/about.html">Über</a>
+        <a href="/lumina-grid/videos/demo-video.html">Videos</a>
+      </div>
     </nav>
   </header>
 
   <main class="main">
-    <h1>Über Lumina Grid</h1>
-    <p>Kurzbeschreibung deines Projekts, Kontakt, Impressum etc.</p>
-    <div class="card">
-      <h2>Kontakt</h2>
-      <p>E-Mail: <a href="mailto:info@beispiel.de">info@beispiel.de</a></p>
-    </div>
+    <section class="card">
+      <h1>Über Lumina Grid</h1>
+      <p>Kurzer Elevator-Pitch, Zielgruppe, Nutzenversprechen. Kontaktmöglichkeiten, rechtliche Hinweise (Impressum/Datenschutz) nach Bedarf.</p>
+    </section>
+
+    <section class="grid">
+      <div class="card">
+        <h3>Vision</h3>
+        <p>Wissenssilos aufbrechen und Entscheidungen beschleunigen.</p>
+      </div>
+      <div class="card">
+        <h3>Schwerpunkte</h3>
+        <p>Dokumenten-RAG, Berechtigungen, EU-Hosting, einfache Integration.</p>
+      </div>
+      <div class="card">
+        <h3>Kontakt</h3>
+        <p>E-Mail: <a href="mailto:info@example.com">info@example.com</a></p>
+      </div>
+    </section>
   </main>
 
   <footer class="footer">
-    © <span id="y"></span> Lumina Grid · <a href="/lumina-grid/about.html">Kontakt/Impressum</a>
+    © <span id="y"></span> Lumina Grid
     <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
   </footer>
 </body>
