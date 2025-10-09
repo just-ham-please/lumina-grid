@@ -8,44 +8,47 @@
   <script defer src="assets/script.js"></script>
 </head>
 <body>
+  <!-- 🔧 Hintergrund wie auf Startseite -->
+  <div class="bg" aria-hidden="true"></div>
+
   <header class="header">
     <nav class="nav">
-      <div class="brand">
-        <span>🔷 Lumina Grid</span>
-        <span class="badge">Preview</span>
-      </div>
+      <div class="brand"><span>🔷 Lumina Grid</span><span class="badge">Preview</span></div>
       <div class="navlinks">
         <a href="/lumina-grid/">Home</a>
         <a href="/lumina-grid/about.html">Über</a>
         <a href="/lumina-grid/videos/demo-video.html">Videos</a>
+        <span class="toggle" data-toggle-theme>☼/☾</span>
       </div>
     </nav>
   </header>
 
-  <main class="main">
-    <section class="card">
+  <!-- 🔧 Einheitlicher Seitenrahmen -->
+  <main class="container">
+    <!-- 🔧 Kartenstil für Rahmen/Glassmorphism -->
+    <section class="card reveal">
       <h1>Über Lumina Grid</h1>
-      <p>Kurzer Elevator-Pitch, Zielgruppe, Nutzenversprechen. Kontaktmöglichkeiten, rechtliche Hinweise (Impressum/Datenschutz) nach Bedarf.</p>
+      <p>Kurzer Elevator-Pitch, Zielgruppe, Nutzenversprechen. Kontakt/Impressum nach Bedarf.</p>
     </section>
 
-    <section class="grid">
-      <div class="card">
+    <section class="section grid">
+      <article class="card reveal">
         <h3>Vision</h3>
         <p>Wissenssilos aufbrechen und Entscheidungen beschleunigen.</p>
-      </div>
-      <div class="card">
+      </article>
+      <article class="card reveal">
         <h3>Schwerpunkte</h3>
         <p>Dokumenten-RAG, Berechtigungen, EU-Hosting, einfache Integration.</p>
-      </div>
-      <div class="card">
+      </article>
+      <article class="card reveal">
         <h3>Kontakt</h3>
         <p>E-Mail: <a href="mailto:info@example.com">info@example.com</a></p>
-      </div>
+      </article>
     </section>
   </main>
 
   <footer class="footer">
-    © <span id="y"></span> Lumina Grid
+    © <span id="y"></span> Lumina Grid · <a href="/lumina-grid/about.html">Impressum/Kontakt</a>
     <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
   </footer>
 </body>
